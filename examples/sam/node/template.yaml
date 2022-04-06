@@ -36,7 +36,7 @@ Resources:
         # This policy allows the lambda to know the value of the New Relic licence key. We need this so
         # that we can send telemetry back to New Relic
         - AWSSecretsManagerGetSecretValuePolicy:
-            SecretArn: !ImportValue NewRelicLicenseKeySecret-NewRelic-LicenseKeySecretARN
+            SecretArn: !ImportValue NewRelic-LicenseKey-NewRelic-ViewLicenseKeyPolicyARN
   Logs:
     Type: AWS::Logs::LogGroup
     Properties:
